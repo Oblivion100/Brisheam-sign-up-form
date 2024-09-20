@@ -1,30 +1,65 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Bisheam Sign Up Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Bisheam logo -->
-    <img id="logo" src="Vector.png" alt="Vector logo">
+  <!-- header -->
+  <img id="logo" src="Vector.png" alt="Vector logo">
+  <img id="brisheam" src="Image.png" alt="Brisheam img">
 
-  <div class="container">
+  <nav>
+    <ul>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">English</a></li>
+      <li><a href="#">Sign Up</a></li>
+      <li><a href="#"> <img id="Home" src="home.png" alt="Home logo"></a></li>
+    </ul>
+  </nav>
+  <!-- Login -->
 
-      <!-- Header -->
-      <h2>WELCOME BACK!</h2>
-      <p>Don't have an account, <a href="#">Sign up</a></p>
+  <div class="login-container">
+    <h2>Welcome Back!</h2>
+    <p class="para1">Don't have an account, <a href="#">Sign up</a></p>
+    <form>
+      <div class="input-group">
+        <form class="login-form">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="    johndoe@gmail.com" required>
 
-      <!-- Forms  -->
-        <form>
-          <label for="email"></label>
-          <input type="text" placeholder="EMAIL" name="email" required>
-          <label for="password"></label>
-          <input type="password" placeholder="PASSWORD" name="password" required>
-       </form>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="    ********" required>
+          </div>
+        </form>
+        <input type="radio" id="remember-yes" name="remember-me" value="yes">
+        <label for="remember-yes">Remember me</label>
+        <p class="para2"><a href="#">Forget Password?</a></p>
+      </div>
+      <button type="submit">sign in</button>
+  </div>
+  <!-- Alternative Login -->
+  <div class="alternative-login">
 
+    <p><a class="continue" href="#"> -------------or continue with------------- </a></p>
+    <div class="alternative-options">
+      <button class="google-btn">
+        <img src="google.png" alt="Google Logo">
+      </button>
+      <button class="facebook-btn">
+        <img src="facebook.png" alt="Facebook Logo">
+      </button>
+      <button class="apple-btn">
+        <img src="apple.png" alt="Apple Logo">
+      </button>
     </div>
-    
+  </div>
 </body>
+
 </html>
